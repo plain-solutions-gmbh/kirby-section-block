@@ -6,7 +6,7 @@ Section wrapper block that contains column blocks.
 
 Due to the success of [Column Blocks](https://github.com/youngcut/kirby-column-blocks) and [Grid block](https://github.com/youngcut/kirby-grid-block), i've been created an improved version based on your suggestions.
 
-![Screenshot](./.git/screenshot.png)
+![Screenshot](./.github/screenshot.png)
 
 ## Features
 
