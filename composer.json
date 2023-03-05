@@ -1,0 +1,21 @@
+{
+    "name": "microman/kirby-section-block",
+    "description": "Block with a section wrapper and column blocks.",
+    "license": "MIT",
+    "type": "kirby-plugin",
+    "version": "1.0.0-beta",
+    "authors": [{
+        "name": "Roman Gsponer",
+        "email": "kirby@microman.ch"
+    }],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "funding": [{
+        "type": "other",
+        "url": "https://www.paypal.com/donate/?hosted_button_id=5W5RBKYXBDABN"
+    }]
+}

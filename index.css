@@ -1,0 +1,91 @@
+
+.k-block-container-type-section {
+  padding: 0;
+}
+
+.k-block-container-type-column {
+  padding-top: 2rem;
+}
+.k-block-type-column .k-empty.k-blocks-empty {
+  background: var(--color-white);
+}
+.k-block-type-column
+  > .k-blocks
+  > .k-blocks-list
+  > div:first-child
+  > .k-block-options {
+  right: 10rem;
+}
+
+.k-section-column-blocks {
+  padding: 0.75rem;
+  border-radius: var(--rounded);
+}
+.k-section-column-blocks-list {
+  grid-column-gap: 0 !important;
+  grid-row-gap: 0.8rem !important;
+}
+.k-block-container-type-column {
+  background-color: transparent;
+}
+.k-block-container-type-column > .k-block-options {
+  margin-top: 0;
+  margin-right: 0;
+  right: 0;
+  box-shadow: none;
+  z-index: 1;
+}
+.k-block-container-type-column > .k-block-options .k-button-icon {
+  --size: 0.8rem;
+}
+.k-block-container-type-column > .k-block-options .k-sort-handle svg {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+.k-section-column-block {
+  position: relative;
+}
+.k-block-container[data-selected="true"] + .k-section-column-block-label {
+  z-index: 1;
+}
+.k-section-column-block-label {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.7rem;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.k-section-column-selector-wrapper.opened,
+.k-section-column-selector-wrapper.empty {
+  max-height: 10rem;
+}
+.k-section-column-selector-wrapper:not(.empty) {
+  padding-top: 1rem;
+}
+.k-section-column-selector-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.k-section-column-selector-wrapper .k-blocks-empty {
+  flex: 1 1 10rem;
+  margin: 0 0.5rem;
+  background: var(--color-white);
+}
+.k-layout-field.k-field.k-field-name-grid .k-field-header {
+  display: block;
+}
+
+.k-block-container[data-last-in-batch] .k-block-options, 
+.k-block-container[data-selected] .k-block-options {
+  display: none;
+}
+
+.k-block-container[data-last-in-batch] > .k-block-options, 
+.k-block-container[data-selected] > .k-block-options {
+  display: flex;
+}

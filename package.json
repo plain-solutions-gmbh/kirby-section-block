@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "dev": "npx -y kirbyup src/index.js --watch",
+        "serve": "npx -y kirbyup serve src/index.js",
+        "build": "npx -y kirbyup src/index.js",
+        "lint": "eslint \"src/**/*.{js,vue}\"",
+        "lint:fix": "npm run lint -- --fix",
+        "format": "prettier --write \"{lib,src}/**/*.{php,js,vue}\" \"index.php\""
+    },
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.17.6",
+        "eslint": "^8.3.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-vue": "^8.1.1",
+        "prettier": "^2.4.1"
+    }
+}
