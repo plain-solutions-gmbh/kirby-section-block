@@ -129,6 +129,78 @@ Let me just say something about the `$column->column_width()` method (with *1/2*
 - Set a number as parameter, the width will be divided by this: `column_width(100)` -> *50*  `column_width(12)` -> *6*
 - Any other character is a separator: `column_width('_')` -> *1_2*
 
+## Inherit the section block 
+
+I general you set up like above and you're good to go. But sometimes you need the section block anywhere else with different settings. Let me show you how to do this.
+
+### Customize the section
+
+Let say, in one place you need to add a new field for you section. Let's do it:
+
+``` yml
+my_custom_block:
+  type: blocks
+  fieldsets:
+    section:
+      extends: blocks/section
+      fields:
+        new_section_field:
+          type: text
+```
+
+### Customize the column types
+
+``` yml
+my_custom_block:
+  type: blocks
+  fieldsets:
+    section:
+      extends: blocks/section
+      fields:
+          columns:
+            options:
+              custom_type1:
+                title: Half and Red Background
+                icon: col_1_2
+                width: "1/2"
+                style:
+                    background: red
+              custom_type1:
+                title: Half and Blue Background
+                icon: col_1_2
+                width: "1/2"
+                style:
+                    background: blue
+```
+
+### Customize column block
+
+In this example we like to add a new field to the column and overwrite the fieldsets.
+
+``` yml
+my_custom_block:
+  type: blocks
+  fieldsets:
+    section:
+      extends: blocks/section
+      fields:
+          columns:
+            fieldsets:
+              column:
+                extends: blocks/column
+                fields:
+                  new_column_field:
+                    type: text
+                  content:
+                    fieldsets:
+                      - video
+                      - image
+```
+
+Phew! 🥵 A lot of indents.
+And no, it's no possible to set different column fieldsets for a specific column type. But if you like to implement it, feel free and make a [pull request](https://github.com/youngcut/kirby-section-block/pulls).
+
+
 **Have fun with it!**
 
 ## License
