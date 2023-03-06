@@ -25,7 +25,7 @@ Due to the success of [Column Blocks](https://github.com/youngcut/kirby-column-b
 > Contributors wanted! Please help me to improve this thing by posting your feedbacks or doing pull requests.
 >
 > **Bugs**
-> - Lost focus on update
+> - Lost focus on input of the content block
 >
 > **Missing Feature**
 > - Paste
@@ -88,9 +88,9 @@ fields:
 
 ### Set up the column block
 
-Now, we set the background field. We can use the given value, later for our backend styling. And also we set a few fielsets for our column blocks.
+Now, we set the background field. We can use the given value, later for our backend styling. And also we set a few fielsets for our content blocks.
 
-`site/blueprints/fields/columns.yml` (Keep in mind: `fields` folder not `blocks`!)
+`site/blueprints/fields/columns.yml`
 ```yml
 fields:
   background:
