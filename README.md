@@ -88,9 +88,9 @@ fields:
 
 ### Set up the column block
 
-Now, we set the background field. We can use the given value, later for our backend styling. And also we set a few fielsets for our column blocks.
+Now, we set the background field. We can use the given value, later for our backend styling. And also we set a few fielsets for our content blocks.
 
-`site/blueprints/fields/columns.yml` (Keep in mind: `fields` folder not `blocks`!)
+`site/blueprints/fields/columns.yml`
 ```yml
 fields:
   background:
