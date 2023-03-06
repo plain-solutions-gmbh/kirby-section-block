@@ -25,7 +25,7 @@ Due to the success of [Column Blocks](https://github.com/youngcut/kirby-column-b
 > Contributors wanted! Please help me to improve this thing by posting your feedbacks or doing pull requests.
 >
 > **Bugs**
-> - Lost focus on update
+> - Lost focus on input of the content block
 >
 > **Missing Feature**
 > - Paste
