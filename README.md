@@ -32,6 +32,7 @@ Due to the success of [Column Blocks](https://github.com/youngcut/kirby-column-b
 > - Parsley integration
 > - Individual fielsset per column type
 > - Change type button on main options bar
+> - Compatibility with tabs
 > 
 
 
