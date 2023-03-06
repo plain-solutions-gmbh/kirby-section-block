@@ -36,7 +36,6 @@ class Blueprints
             "options" => static::getOptions(),
         ];
 
-        //dump($out);
         return $out;
     }
 
@@ -52,7 +51,7 @@ class Blueprints
         }
     }
 
-    private static function getOptions($filter = null)
+    private static function getOptions($index = null)
     {
         $out = [];
         $path = kirby()->root("blueprints") . "/columns";
@@ -61,19 +60,12 @@ class Blueprints
             $path = __DIR__ . "/../blueprints/columns";
         }
 
-        if (is_string($filter)) {
-            return Yaml::read($path."/{$filter}.yml");
+        if (!is_null($index)) {
+            return Yaml::read($path."/{$index}.yml");
         }
         
-        $files = Dir::read($path, [], true);
 
-        if (is_array($filter)) {
-            $files = array_filter($files, function($f) use ($filter) {
-                return in_array(pathinfo($f)["filename"], $filter);
-            });
-        }
-
-        foreach ($files as $f) {
+        foreach (Dir::read($path, [], true) as $f) {
             $col = Yaml::read($f);
             $name = pathinfo($f)["filename"];
 
