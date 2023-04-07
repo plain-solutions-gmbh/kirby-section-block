@@ -1,4 +1,4 @@
-# Kirby Kirby Section Block (Beta)
+# Kirby Section Block (Beta)
 
 ## Overview
 
