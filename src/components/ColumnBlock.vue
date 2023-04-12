@@ -1,5 +1,5 @@
 <template>
-  <k-blocks
+  <k-section-content-block
     v-bind="contentField"
     :value="content.content"
     @input="input($event)"
@@ -17,6 +17,12 @@ export default {
       },
     },
   },
+  data() {
+    return {
+      myTimeout: null
+    };
+
+  },
   computed: {
     contentField() {
       return this.field("content");
@@ -24,8 +30,9 @@ export default {
   },
   methods: {
     input(event) {
-      this.$emit("update", event);
+      this.$emit("update", event)
     },
+
   },
 };
 </script>

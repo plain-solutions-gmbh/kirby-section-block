@@ -1,6 +1,7 @@
 import ColumnsField from "./components/ColumnsField.vue";
 import SectionBlock from "./components/SectionBlock.vue";
 import ColumnBlock from "./components/ColumnBlock.vue";
+import ContentBlock from "./components/ContentBlock.vue";
 import ColumnBlocks from "./components/ColumnBlocks.vue";
 import ColumnSelector from "./components/ColumnSelector.vue";
 import "./index.css";
@@ -18,6 +19,7 @@ window.panel.plugin("microman/section-block", {
   components: {
     "k-section-column-blocks": ColumnBlocks,
     "k-section-column-selector": ColumnSelector,
+    "k-section-content-block": ContentBlock,
   },
 
   icons: {
